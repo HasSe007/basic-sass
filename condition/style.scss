@@ -1,0 +1,43 @@
+$colors: red blue green;
+
+@each $color in $colors {
+    .sq-#{$color} {
+        background-color: $color;
+        @if $color == blue {
+            border: 5px solid purple;
+        }
+        @else if $color == red {
+            border-radius: 50%;
+        }
+        @else {
+            border: 5px solid gold;
+        }
+    }
+}
+
+.if-condition > div {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+
+.boolean {
+    @for $n from 10 through 1{
+        div:nth-child(#{$n}) {
+            @if $n < 8 and $n >= 4 and not ($n ==5){
+                border-radius: 50%;
+            }
+            @if $n == 2 or $n ==5 {
+                background: red;
+            }
+        }
+    }
+    div {
+        display: inline-block;
+        background-color: blue;
+        color: white;
+        padding: 20px;
+        margin: 2.5px;
+    }
+}
