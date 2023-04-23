@@ -1,0 +1,52 @@
+@for $i from 1 through 5 {
+    .dot:nth-child(#{$i}) {
+        $size: 10px * $i;
+        width: $size;
+        height: $size;
+    }
+}
+
+@for $i from 6 to 10 {
+    .dot:nth-child(#{$i}) {
+        $size: 10px * (10-$i);
+        width: $size;
+        height: $size;
+    }
+}
+
+h1{
+    color: red;
+}
+
+.dot{
+    border-radius: 50%;
+    background-color: red;
+}
+.each-loop {
+    //list
+    $fontSize: 20px 40px 60px;
+    @each $size in $fontSize {
+        .text-#{$size} {
+            font-size: $size;
+        }
+    }
+
+    //map
+    $fontSize: (small: 20px, medium: 40px, large: 60px);
+    @each $name, $size in $fontSize {
+        .text-#{$name} {
+            font-size: $size;
+        }
+    }
+}
+.while-loop {
+    $smallSize: 20;
+    @while $smallSize <= 60 {
+        .text-#{$smallSize} {
+            font-size: $smallSize+px;
+        }
+        $smallSize: $smallSize + 20;
+    }
+
+}
+

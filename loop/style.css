@@ -1,0 +1,84 @@
+.dot:nth-child(1) {
+  width: 10px;
+  height: 10px;
+}
+
+.dot:nth-child(2) {
+  width: 20px;
+  height: 20px;
+}
+
+.dot:nth-child(3) {
+  width: 30px;
+  height: 30px;
+}
+
+.dot:nth-child(4) {
+  width: 40px;
+  height: 40px;
+}
+
+.dot:nth-child(5) {
+  width: 50px;
+  height: 50px;
+}
+
+.dot:nth-child(6) {
+  width: 40px;
+  height: 40px;
+}
+
+.dot:nth-child(7) {
+  width: 30px;
+  height: 30px;
+}
+
+.dot:nth-child(8) {
+  width: 20px;
+  height: 20px;
+}
+
+.dot:nth-child(9) {
+  width: 10px;
+  height: 10px;
+}
+
+h1 {
+  color: red;
+}
+
+.dot {
+  border-radius: 50%;
+  background-color: red;
+}
+
+.each-loop .text-20px {
+  font-size: 20px;
+}
+.each-loop .text-40px {
+  font-size: 40px;
+}
+.each-loop .text-60px {
+  font-size: 60px;
+}
+.each-loop .text-small {
+  font-size: 20px;
+}
+.each-loop .text-medium {
+  font-size: 40px;
+}
+.each-loop .text-large {
+  font-size: 60px;
+}
+
+.while-loop .text-20 {
+  font-size: 20px;
+}
+.while-loop .text-40 {
+  font-size: 40px;
+}
+.while-loop .text-60 {
+  font-size: 60px;
+}
+
+/*# sourceMappingURL=style.css.map */
