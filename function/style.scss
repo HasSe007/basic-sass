@@ -1,0 +1,13 @@
+@function math-pow($base, $exponent: 1) {
+    $result: 1;
+    @for $_ from 1 through $exponent {
+        $result: $result * $base;
+    }
+    @return $result;
+}
+
+.box {
+    width: math-pow(10, 2) + 0px;
+    height: math-pow(5, 3) + 0px;
+    background: red;
+}
