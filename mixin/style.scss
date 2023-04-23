@@ -1,0 +1,66 @@
+@mixin box ($color, $width: 80px) {
+    width: $width;
+    height: 80px;
+    border-radius: 5px;
+    color: $color;
+}
+
+.modal1 {
+    @include box(yellow);
+    background: red;
+}
+.modal2 {
+    @include box($width: 90px, $color:red);
+    background: blue;
+}
+.modal3 {
+    @include box(green, 100px);
+    background: yellow;
+}
+
+@mixin textStyle($font, $selectors...) {
+    @each $selector in $selectors {
+        #{$selector} {
+            font-size: $font;
+            @content
+        }
+    }
+} 
+
+$classList: '.text1', '.text2', '.text3';
+@include textStyle(24px, $classList...) {
+    text-transform: uppercase;//use @content in mixin
+}
+
+.message {
+    padding: 10px;
+    border-left: 5px solid aqua;
+    background: lightgray;
+    margin: 5px;
+}
+.warning {
+    @extend .message;
+    border-color: orange;
+}
+.error {
+    @extend .message;
+    border-color: red;
+}
+//Or use placeholder 
+// %alert {
+//     padding: 10px;
+//     border-left: 5px solid aqua;
+//     background: lightgray;
+//     margin: 5px;
+// }
+// .message {
+//    @extend %alert;
+// }
+// .warning {
+//     @extend %alert;
+//     border-color: orange;
+// }
+// .error {
+//     @extend %alert;
+//     border-color: red;
+// }

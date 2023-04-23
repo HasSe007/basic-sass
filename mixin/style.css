@@ -1,0 +1,55 @@
+.modal1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  color: yellow;
+  background: red;
+}
+
+.modal2 {
+  width: 90px;
+  height: 80px;
+  border-radius: 5px;
+  color: red;
+  background: blue;
+}
+
+.modal3 {
+  width: 100px;
+  height: 80px;
+  border-radius: 5px;
+  color: green;
+  background: yellow;
+}
+
+.text1 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.text2 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.text3 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.message, .error, .warning {
+  padding: 10px;
+  border-left: 5px solid aqua;
+  background: lightgray;
+  margin: 5px;
+}
+
+.warning {
+  border-color: orange;
+}
+
+.error {
+  border-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
